@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name=google-site-verification: googledcc851b19737195e.html content=FishOn>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FishOn - Fisherman Finder App</title>
     <style>
