@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name=google-site-verification: googledcc851b19737195e.html content=FishOn>
+    <meta name=description content="FishOn - Find Fishermen Near You. Connect with local fishing enthusiasts, share fishing spots, and build a community of anglers.">
+    <meta name=keywords content="FishOn, Fishing App, Find Fishermen, Fishing Community, Share Fishing Spots, Anglers, Local Fishermen, Fishing Network, fish on app, fishon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FishOn - Fisherman Finder App</title>
     <style>
