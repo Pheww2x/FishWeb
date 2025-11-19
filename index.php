@@ -238,7 +238,7 @@
                 <p style="color: #475569; margin-bottom: 35px; font-size: 17px;">Download FishOn now and join the fishing community!</p>
                 <?php
                 // Replace this with your actual app download link
-                $downloadLink = "YOUR_DOWNLOAD_LINK_HERE";
+                $downloadLink = "https://github.com/Pheww2x/Fish_On/releases/download/FishOn/FishOn.apk";
                 ?>
                 <a href="<?php echo htmlspecialchars($downloadLink); ?>" class="download-btn" download>
                     <span class="download-icon">📥</span>
