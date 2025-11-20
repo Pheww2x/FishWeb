@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name=google-site-verification: googledcc851b19737195e.html content=FishOn>
-    <meta name=description content="FishOn - Find Fishermen Near You. Connect with local fishing enthusiasts, share fishing spots, and build a community of anglers.">
-    <meta name=keywords content="FishOn, Fishing App, Find Fishermen, Fishing Community, Share Fishing Spots, Anglers, Local Fishermen, Fishing Network, fish on app, fishon">
+    <meta name=description content="FishOn - Find Fishermen Near You. Buy fresh fish directly from local fishermen in your area.">
+    <meta name=keywords content="FishOn, Buy Fresh Fish, Find Fishermen, Local Fishermen, Fresh Seafood, Fish Market, fish on app, fishon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FishOn - Fisherman Finder App</title>
     <style>
@@ -159,12 +159,92 @@
 
 
         .footer {
+            background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 50%, #0891b2 100%);
+            color: #cbd5e1;
+            padding: 60px 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-brand h2 {
+            color: #94a3b8;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .footer-brand p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .footer-section h3 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .footer-section:last-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .download-box {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            padding: 45px;
             text-align: center;
-            padding: 40px;
-            color: #64748b;
-            font-size: 14px;
-            background: linear-gradient(to bottom, white 0%, #f8fafc 100%);
-            border-top: 1px solid #e2e8f0;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 160px;
+        }
+
+        .download-box a {
+            display: block;
+        }
+
+        .download-box img {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
         }
 
         @media (max-width: 768px) {
@@ -197,6 +277,11 @@
                 padding: 16px 40px;
                 font-size: 17px;
             }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
         }
     </style>
 </head>
@@ -207,35 +292,35 @@
                 <img src="logo.png" alt="FishOn Logo"> 
             </div>
             <h1>FishOn</h1>
-            <p class="tagline">Find Fishermen Near You</p>
+            <p class="tagline">Buy Fresh Fish from Local Fishermen</p>
         </div>
 
         <div class="content">
             <div class="description">
-                <p>Connect with fellow fishing enthusiasts in your area. FishOn helps you discover local fishermen, share fishing spots, and build a community of passionate anglers.</p>
+                <p>Find local fishermen near you and buy fresh fish directly from the source. Get the freshest catch delivered straight from the boat.</p>
             </div>
 
-            <div class="features">
+            <div class="features" id="features">
                 <div class="feature">
                     <div class="feature-icon">📍</div>
                     <h3>Find Fishermen</h3>
-                    <p>Locate nearby fishermen and connect with the fishing community in your area.</p>
+                    <p>Locate nearby fishermen selling fresh catch in your area.</p>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">🎣</div>
-                    <h3>Share Spots</h3>
-                    <p>Discover and share the best fishing locations with other enthusiasts.</p>
+                    <div class="feature-icon">🐟</div>
+                    <h3>Fresh Fish</h3>
+                    <p>Buy the freshest fish directly from local fishermen.</p>
                 </div>
                 <div class="feature">
-                    <div class="feature-icon">👥</div>
-                    <h3>Build Community</h3>
-                    <p>Connect, chat, and plan fishing trips with anglers who share your passion.</p>
+                    <div class="feature-icon">💬</div>
+                    <h3>Direct Contact</h3>
+                    <p>Chat with fishermen and order your fresh catch instantly.</p>
                 </div>
             </div>
 
             <div class="download-section">
                 <h2 style="color: #1e40af; margin-bottom: 20px; font-size: 32px; font-weight: 700;">Ready to Get Started?</h2>
-                <p style="color: #475569; margin-bottom: 35px; font-size: 17px;">Download FishOn now and join the fishing community!</p>
+                <p style="color: #475569; margin-bottom: 35px; font-size: 17px;">Download FishOn now and buy fresh fish from local fishermen!</p>
                 <?php
                 // Replace this with your actual app download link
                 $downloadLink = "https://github.com/Pheww2x/Fish_On/releases/download/FishOn/FishOn.apk";
@@ -251,8 +336,38 @@
         </div>
 
         <div class="footer">
-            <p>&copy; <?php echo date('Y'); ?> FishOn. All rights reserved.</p>
-            <p style="margin-top: 10px;">Questions? Contact us at fishon.app@gmail.com</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>FishOn</h2>
+                    <p>Find local fishermen near you and buy fresh fish directly from the source. Get the freshest catch delivered straight from the boat.</p>
+                    <div class="social-icons">
+                        <a href="#">f</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📷</a>
+                        <a href="#">in</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.php">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="contact.php">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="help.php">Help Center</a>
+                    <a href="privacy.php">Privacy Policy</a>
+                    <a href="terms.php">Terms of Service</a>
+                    <a href="contact.php">Contact Us</a>
+                </div>
+                <div class="footer-section">
+                    <div class="download-box">
+                        <a href="<?php echo htmlspecialchars($downloadLink); ?>" download>
+                            <img src="logo.png" alt="FishOn">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
